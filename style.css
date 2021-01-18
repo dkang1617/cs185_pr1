@@ -1,0 +1,37 @@
+#para{ 
+	color: seagreen;
+	background-color: skyblue;
+}
+
+.parent{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 25px;
+}
+
+.child{
+	
+	padding: 25px;
+	
+	text-align: center;
+}
+
+.tabs{
+	background-color: black;
+	padding: 13px;
+	font-size: 20px;
+	text-align: left;
+}
+
+.tabs a{
+	color: lightgrey;
+	padding: 13px;
+	text-decoration: none;
+}
+
+
+table,td,th,tr{
+	padding: 13px;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
