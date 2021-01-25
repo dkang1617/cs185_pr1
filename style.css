@@ -1,4 +1,4 @@
-.parent{
+.child{
 	display: grid;
 	padding: 3%;
 	grid-template-columns: 22.5% 22.5% 22.5% 22.5%;
@@ -6,7 +6,7 @@
 	grid-row-gap: 5%;	
 }
 
-.child{
+.parent{
 	
 	padding: 25px;
 	
@@ -14,23 +14,23 @@
 }
 
 @media only screen and (min-width: 640px) {
-	.parent {
+	.child {
 		grid-template-columns: 47.5% 47.5%;
 		grid-column-gap: 5%;
 		grid-row-gap: 5%;	
 	}
-	.parent > div {
+	.child > div {
 		padding: 20px;
 	}	
 }
 
 @media only screen and (min-width: 981px) {
-	.parent {
+	.child {
 		grid-template-columns: 30% 30% 30%;
 		grid-column-gap: 5%;
 		grid-row-gap: 5%;	
 	}
-	.parent > div {
+	.child > div {
 		padding: 20px;
 	}	
 }
