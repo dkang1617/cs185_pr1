@@ -1,12 +1,9 @@
-#para{ 
-	color: seagreen;
-	background-color: skyblue;
-}
-
 .parent{
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	padding: 25px;
+	padding: 3%;
+	grid-template-columns: 22.5% 22.5% 22.5% 22.5%;
+	grid-column-gap: 5%;
+	grid-row-gap: 5%;	
 }
 
 .child{
@@ -14,6 +11,28 @@
 	padding: 25px;
 	
 	text-align: center;
+}
+
+@media only screen and (max-width: 640px) {
+	.parent {
+		grid-template-columns: 47.5% 47.5%;
+		grid-column-gap: 5%;
+		grid-row-gap: 5%;	
+	}
+	.parent > div {
+		padding: 20px;
+	}	
+}
+
+@media only screen and (max-width: 981px) {
+	.parent {
+		grid-template-columns: 30% 30% 30%;
+		grid-column-gap: 5%;
+		grid-row-gap: 5%;	
+	}
+	.parent > div {
+		padding: 20px;
+	}	
 }
 
 .tabs{
