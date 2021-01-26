@@ -6,7 +6,7 @@
 	grid-row-gap: 1%;	
 }
 
-@media only screen and (max-width: 250px) {
+@media only screen and (max-width: 300px) {
 	.parent{
 		grid-template-columns:1fr;
 		grid-column-gap: 1%;
