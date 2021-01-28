@@ -1,1 +1,42 @@
+<!DOCTYPE html>
 
+<html>
+
+<head>
+	<link rel = "stylesheet" href = "style.css">
+	<title>Email</title>
+	
+</head>
+
+
+
+<body>
+
+<nav class = "tabs">
+	<a href = "index.html"> Text</a>
+	<a href = "images.html"> Images</a>
+	<a href = "videos.html"> Videos</a>
+	<a href = "table.html"> Table</a>
+	<a href = "email.html" class = "current"> Email</a>
+</nav>
+
+<h1 class = "header">Email</h1>
+
+<!-- https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
+<button class = "topBtn">To the Top</button>
+
+<!-- https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript -->
+<form>
+	<label for="email">Please enter your email:</label>
+	<br>
+	<input type ="text" id = "email"></input>
+	<br><br>
+	<button onClick = 'validate(); return false;'>Done</button>
+</form>
+
+<h2 id = 'result'></h2>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="javascript.js"></script>
+
+</html>
