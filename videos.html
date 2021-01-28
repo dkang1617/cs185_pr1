@@ -5,37 +5,56 @@
 <head>
 	<link rel = "stylesheet" href = "style.css">
 	<title>Videos</title>
+	
 </head>
 
 
 
 <body>
+<!-- tab highlight learned from https://jsfiddle.net/taditdash/LrMsA/ -->
 <nav class = "tabs">
 	<a href = "index.html"> Text</a>
 	<a href = "images.html"> Images</a>
-	<a href = "videos.html"> Videos</a>
+	<a href = "videos.html" class = "current"> Videos</a>
 	<a href = "table.html"> Table</a>
+	<a href = "email.html"> Email</a>
 </nav>
+
+<h1 class = "header">Videos</h1>
+<!-- https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
+<button class = "topBtn">To the Top</button>
 
 <div class = "parent">	<!-- iframe learned from w3schools.com and online tutorials-->
 	<div class = "child">
-		<iframe width="450" height="250"
-		src="https://www.youtube.com/embed/AsVj37d6JwA">
+		<iframe width="250" height="150"
+		src="https://www.youtube.com/embed/AsVj37d6JwA" id = "vid1">
 		</iframe>
 	</div>
 	<div class = "child">
-		<iframe width="450" height="250"
-		src="https://www.youtube.com/embed/wDFbmiDRg5U">
+		<iframe width="250" height="150"
+		src="https://www.youtube.com/embed/wDFbmiDRg5U" id = "vid2">
 		</iframe>
 	</div>
 	<div class = "child">
-		<iframe width="450" height="250"
-		src="https://www.youtube.com/embed/VMpD01XhTIQ">
+		<iframe width="250" height="150"
+		src="https://www.youtube.com/embed/VMpD01XhTIQ" id = "vid3">
 		</iframe>
+	</div>
+	<div class = "child">
+		<iframe width="250" height="150"
+		src="https://www.youtube.com/embed/95O6mbLsy4M" id = "vid4">
+		</iframe>
+	</div>
+	
+	<div id = "myModal" class = "modal">
+		<span class = "close">&times</span>
+		<img class = "modal-content" id = "modalImg">
 	</div>
 	
 </div>
 
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="javascript.js"></script>
 </html>
