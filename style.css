@@ -6,6 +6,7 @@
 	grid-row-gap: 1%;	
 }
 
+
 /* from tutorials looking up dynamic rows in css https://www.youtube.com/watch?v=68O6eOGAGqA */
 @media only screen and (max-width: 1200px) {
 	.parent{
@@ -22,6 +23,7 @@
 		grid-row-gap: 1%;
 	}
 }
+
 
 @media only screen and (max-width: 600px) {
 	.parent{
