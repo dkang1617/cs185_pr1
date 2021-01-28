@@ -5,19 +5,25 @@
 <head>
 	<link rel = "stylesheet" href = "style.css">
 	<title>Text</title>
+	
 </head>
 
 
 
 <body>
+<!-- tab highlight learned from https://jsfiddle.net/taditdash/LrMsA/ -->
 <nav class = "tabs">
-	<a href = "index.html"> Text</a>
+	<a href = "index.html" class = "current"> Text</a>
 	<a href = "images.html"> Images</a>
 	<a href = "videos.html"> Videos</a>
 	<a href = "table.html"> Table</a>
+	<a href = "email.html"> Email</a>
 </nav>
 
-<br>
+<h1 class = "header">Index</h1>
+<!-- https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
+<button class = "topBtn">To the Top</button>
+
 <form>
 	<label for="fname">First name:</label><br>
 	<input type ="text" id = "fname" value = "Daniel"><br>
@@ -38,4 +44,6 @@
 
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="javascript.js"></script>
 </html>
